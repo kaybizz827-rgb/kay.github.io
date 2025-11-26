@@ -14,16 +14,18 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="flutter_application_kaybizz">
+  <meta name="apple-mobile-web-app-title" content="flutter_application_kaybizz
+">
+  <meta name="google-signin-client_id" content="904534866902-212voio9pnkt287nfgnioicdveo7i04m.apps.googleusercontent.com">
+
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
@@ -31,6 +33,28 @@
 
   <title>flutter_application_kaybizz</title>
   <link rel="manifest" href="manifest.json">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+  apiKey: "AIzaSyBIo-6M6QEMjFeVq5uv37EDldp1EjNVvc4",
+  authDomain: "kaybizz-87bd0.firebaseapp.com",
+  projectId: "kaybizz-87bd0",
+  storageBucket: "kaybizz-87bd0.firebasestorage.app",
+  messagingSenderId: "92518850964",
+  appId: "1:92518850964:web:e0a7d3fb46998ee1aaef81",
+  measurementId: "G-99970EDCQC"
+    };
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
